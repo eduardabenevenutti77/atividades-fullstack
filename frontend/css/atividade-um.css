@@ -23,12 +23,18 @@ form {
 }
 fieldset {
     margin-top: 5px;
-    width: 80%;
+    width: 60%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2%;
+    /* margin: 10px; */
+    gap: 0;
 }
 label {
     color: rgb(37, 37, 37);
+}
+option {
+    color: black;
 }
 #header {
     /* display: flex;
@@ -75,9 +81,26 @@ label {
 #information {
     margin-left: 500px;
 }
+#display-sexo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+}
 .container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+}
+.form-control {
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #253e39;
+    padding: 2px;
+}
+.form-select {
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #253e39;
+    color: black;
 }
 .dosis {
   font-family: "Dosis", sans-serif;
