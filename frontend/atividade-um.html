@@ -11,18 +11,21 @@
 </head>
 <body>
     <!--
-        1.Crie uma página HTML básica com cabeçalho, corpo e rodapé.
         2.Utilize listas ordenadas e não ordenadas para organizar informações.
         3.Crie um formulário simples com diferentes tipos de campos.
-        4.Incorpore uma imagem e um vídeo usando tags HTML apropriadas.
-        5.Estilize uma página HTML básica com seletores de tag, classe e ID.
-        6.Utilize diferentes unidades de medida para posicionamento e tamanho de elementos.
-        7.Crie um layout flexível usando Flexbox.
-        8.Faça uma página responsiva utilizando Grid Layout.
     -->
     
     <div id="header">
-        <p id="title">1ª Atividade - HTML, Css e JS</p>
+        <div>
+            <p id="title"><a href="/frontend/atividade-um.html"></a>1ª Atividade - HTML, Css e JS</p>
+        </div>
+        <div>
+            <div id="header-pages">
+                <a href="/frontend/atividade-grid.html">Layout Grid</a>
+                <a href="/frontend/atividade-flexbox.html">Layout Flexbox</a>
+                <a href="/frontend/todo-list.html">TO DO LIST</a>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div id="information">
@@ -43,63 +46,56 @@
         <form>
             <fieldset>
                 <div>
-                    <label for="name">Informe o nome do usuário: </label>
+                    <label for="name">Nome do usuário:</label>
                     <input class="form-control" type="text" id="name">
                 </div>
                 <div>
-                    <label for="email">Informe o e-mail do usuário: </label>
+                    <label for="email">E-mail:</label>
                     <input class="form-control" type="email" id="email">
                 </div>
                 <div>
-                    <label for="tel">Informe o telefone do usuário: </label>
-                    <input class="form-control" type="tel" id="tel">
-                </div>
-                <!-- <div id="space"></div> -->
-                <div>
-                    <label for="sexo">Selecione o genêro: </label>
-                    <div id="display-sexo">
-                        <div>
-                            <input type="radio">
-                            <label for="">Feminino</label>
-                        </div>
-                        <div>
-                            <input type="radio">
-                            <label for="">Masculino</label>
-                        </div>
-                    </div>
+                    <label for="tel">Telefone:</label>
+                    <input class="form-control" type="tel" id="tel" maxlength="15">
                 </div>
                 <div>
-                    <label for="state">Selecione a cidade de origem: </label>
-                    <select class="form-select">
-                        <option value="">SC</option>
-                        <option value="">PR</option>
-                        <option value="">SP</option>
-                        <option value="">RJ</option>
-                        <option value="">BA</option>
-                        <option value="">MG</option>
-                        <option value="">RGS</option>
-                        <option value="">PE</option>
+                    <label for="address">CEP:</label>
+                    <input class="form-control" type="text" id="address" max="10">
+                </div>
+                <div>
+                    <label for="state">Estado de Origem:</label>
+                    <select class="form-select" id="state">
+                        <option value="SC">SC</option>
+                        <option value="PR">PR</option>
+                        <option value="SP">SP</option>
+                        <option value="RJ">RJ</option>
+                        <option value="BA">BA</option>
+                        <option value="MG">MG</option>
+                        <option value="RS">RS</option>
+                        <option value="PE">PE</option>
                     </select>
                 </div>
                 <div>
-                    <label for="state">Selecione o estado de origem: </label>
-                    <select class="form-select">
-                        <option value="">SC</option>
-                        <option value="">PR</option>
-                        <option value="">SP</option>
-                        <option value="">RJ</option>
-                        <option value="">BA</option>
-                        <option value="">MG</option>
-                        <option value="">RGS</option>
-                        <option value="">PE</option>
+                    <label for="city">Cidade de Origem:</label>
+                    <select class="form-select" id="city">
+                        <option value="Florianópolis">Florianópolis</option>
+                        <option value="Curitiba">Curitiba</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Salvador">Salvador</option>
+                        <option value="Belo Horizonte">Belo Horizonte</option>
+                        <option value="Porto Alegre">Porto Alegre</option>
+                        <option value="Recife">Recife</option>
                     </select>
+                </div>
+                <div>
+                    <button type="submit" class="btn-submit">Enviar</button>
                 </div>
             </fieldset>
         </form>
-        
     </div>
     <div id="footer">
         <p id="title-footer">&copy; 2024 - Todos os direitos reservados</p>
     </div>
+    <script src="/frontend/js/atividade-um.js"></script>
 </body>
 </html>
