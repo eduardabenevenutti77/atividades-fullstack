@@ -6,6 +6,8 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import List from './components/List'
 import Forms from './components/Forms'
+import Links from './components/Links'
+import LinksPages from './components/Links'
 // import { useFonts } from 'react-native-google-fonts';
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
     <div class="container">
         <List titulo='Anotações de FullStack'/>
         <Forms/>
+      <LinksPages/>
       </div>
       <Footer/>
     </>
