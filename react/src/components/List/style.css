@@ -1,0 +1,15 @@
+#information {
+  margin-left: 400px;
+}
+#introducao {
+  color: black;
+  font-weight: 500;
+}
+#topicos {
+  text-align: justify;
+}
+#title-list {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(69, 107, 94);
+}
