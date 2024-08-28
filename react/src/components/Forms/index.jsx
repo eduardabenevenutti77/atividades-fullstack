@@ -23,23 +23,23 @@ export default function Forms () {
             <fieldset>
                 <div>
                     <label for="name">Nome do usuário:</label>
-                    <input class="form-control" type="text" id="nome" name="nome" value={FormData.name} onChange={handleChange}/>
+                    <input className="form-control" type="text" id="nome" name="nome" value={FormData.name} onChange={handleChange}/>
                 </div>
                 <div>
                     <label for="email">E-mail:</label>
-                    <input class="form-control" type="email" id="email" name="email" value={FormData.email} onChange={handleChange}/>
+                    <input className="form-control" type="email" id="email" name="email" value={FormData.email} onChange={handleChange}/>
                 </div>
                 <div>
                     <label for="tel">Telefone:</label>
-                    <input class="form-control" type="tel" id="tel" name="tel" maxlength="15" value={FormData.tel} onChange={handleChange}/>
+                    <input className="form-control" type="tel" id="tel" name="tel" maxlength="15" value={FormData.tel} onChange={handleChange}/>
                 </div>
                 <div>
                     <label for="address">CEP:</label>
-                    <input class="form-control" type="text" id="address" name="address" max="10" value={FormData.address} onChange={handleChange}/>
+                    <input className="form-control" type="text" id="address" name="address" max="10" value={FormData.address} onChange={handleChange}/>
                 </div>
                 <div>
                     <label for="state">Estado de Origem:</label>
-                    <select class="form-select" id="state">
+                    <select className="form-select" id="state">
                         <option value="SC">SC</option>
                         <option value="PR">PR</option>
                         <option value="SP">SP</option>
@@ -52,7 +52,7 @@ export default function Forms () {
                 </div>
                 <div>
                     <label for="city">Cidade de Origem:</label>
-                    <select class="form-select" id="city">
+                    <select className="form-select" id="city">
                         <option value="Florianópolis">Florianópolis</option>
                         <option value="Curitiba">Curitiba</option>
                         <option value="São Paulo">São Paulo</option>

@@ -1,30 +1,22 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import List from './components/List'
-import Forms from './components/Forms'
-import Links from './components/Links'
-import LinksPages from './components/Links'
-// import { useFonts } from 'react-native-google-fonts';
+// import Home from './pages/Home'
+import About from './pages/About'
+import {Routes, Route} from "react-router-dom"
+import ApiRickAndMorty from './pages/ApiRickAndMorty'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-  // const [loaded] = useFonts({
-  //   Dosis: require('react-native-google-fonts/Dosis'),
-  // });
-
   return (
     <>
     <Header/>
-    <div class="container">
-        <List titulo='Anotações de FullStack'/>
-        <Forms/>
-      <LinksPages/>
-      </div>
-      <Footer/>
+    <Routes>
+      <Route path="/" element={<ApiRickAndMorty/>}></Route>
+      <Route path="/about" element={<About/>}></Route>
+    </Routes>
+    <Footer/>
     </>
   )
 }

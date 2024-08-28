@@ -1,20 +1,23 @@
 import "./style.css"
+import { Link } from "react-router-dom"
 
 export default function Header() {
     return (
         <>
-              <div id="header">
-        <div>
-            <p id="title"><a href="/frontend/atividade-um.html"></a>1ª Atividade - HTML, Css e JS</p>
-        </div>
-        <div>
-            <div id="header-pages">
-                <a href="/frontend/atividade-grid.html">Layout Grid</a>
-                <a href="/frontend/atividade-flexbox.html">Layout Flexbox</a>
-                <a href="/frontend/todo-list.html">TO DO LIST</a>
+        <div id="header">
+            <div>
+                <Link to="/">
+                    <p id="title">Consumindo API do Rick and Morty</p>
+                </Link>
+            </div>
+            <div>
+                <div id="header-pages">
+                    <Link to="/about">
+                        <p>About</p>
+                    </Link>
+                </div>
             </div>
         </div>
-    </div>
         </>
     )
 }
