@@ -4,20 +4,27 @@ import Cards from "../../components/Cards"
 
 export default function ApiRickAndMorty() {
     const [conteudo, setConteudo] = useState(<>Carregando</>) // controla o elemento html
-    function carregarTodosOsPersonagens() {
-        // to do list: carregar os personagens da API com o uso de fetch
-        // fazer o uso de mock é mais fácil para lidar com as informações
-        
-        return {info: [], results: mockResult}
+    async function carregarTodosOsPersonagens() {
+        const  requestOptions = {
+            method: "GET",
+            redirect: "follow",
+        } // configura o método e redicionamento da requisção 
+        const response = await fetch("https://rickandmortyapi.com/api/character", requestOptions) // o await deixa a função assíncrona - realiza a requisição para api e retorna as informações dos personagens
+        if(!response.ok) {
+            throw new Error('Erro de requisição');
+        }
+        const data = await response.json()
+        console.log(data)
+        return {...data}
     }
-    function listarPersonagens() {
-        const { info, results } = carregarTodosOsPersonagens()
+    async function listarPersonagens() {
+        const { info, results } = await carregarTodosOsPersonagens()
         return results.map(personagem => <Cards key={personagem.id} data={personagem}/>) // retorna um elemento html
         // console.log(results)
     }
     useEffect(() => {
-        function getConteudo() {
-           setConteudo(listarPersonagens()) // toda vez que a página for recarregada as informações do personagens serão mostradas!
+        async function getConteudo() {
+           setConteudo( await listarPersonagens()) // toda vez que a página for recarregada as informações do personagens serão mostradas!
         }
         getConteudo()
     }, [])
