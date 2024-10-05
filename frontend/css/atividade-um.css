@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: "Dosis";
+}
+ul {
+    padding: 5px;
+}
+li {
+    color: black;
+    justify-content: center;
+    margin-left: 50px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 10px;
+}
+fieldset {
+    width: 100%;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 0;
+    margin-top: 15px;
+}
+label {
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    font-size: 14px;
+    gap: 15px;
+}
+input[type="radio"] {
+    margin-right: 5px;
+}
+input:focus, select:focus {
+    border-color: #83B3A8;
+    outline: none;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #83B3A8;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #6a9584;
+}
+#header {
+    padding: 20px 40px;
+    margin: 20px;
+    background-color: #83B3A8;
+    color: #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#header #title {
+    font-size: 20px;
+    font-weight: bold;
+}
+#header-pages {
+    display: flex;
+    gap: 15px;
+}
+#header-pages a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+#footer {
+    padding: 25px 50px;
+    margin: 25px;
+    background-color: #83B3A8;
+    color: #fff;
+    border-radius: 10px;
+}
+#title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ecebeb;
+}
+#title-footer {
+    text-align: center;
+    color: rgb(37, 37, 37);
+    font-weight: 600;
+}
+#introducao {
+    color: black;
+    font-weight: 500;
+}
+#topicos {
+    text-align: justify;
+}
+#title-forms {
+    text-align: center;
+    color: rgb(37, 37, 37);
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 25px;
+}
+#information {
+    margin-left: 500px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+}
+.dosis {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
